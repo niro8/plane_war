@@ -17,7 +17,7 @@ class Background(pygame.sprite.Sprite):
 
     def __init__(self, y=0):
         super().__init__()
-        self.image = pygame.image.load('images/background.png').convert()
+        self.image = pygame.image.load('images/background.png')
         self.image_rect = self.image.get_rect()
         self.image_rect.y = y
         self.speed = 1
